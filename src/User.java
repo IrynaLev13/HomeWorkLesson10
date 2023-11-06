@@ -7,15 +7,15 @@ public class User {
         acсount = new Acсount(password);
     }
 
-    class Acсount {
+     class Acсount {
         private String password;
 
         public Acсount(String password) {
             this.password = password;
         }
 
-        void displayAcсount() {
-            System.out.printf("Account Login successful! Login: %s \t Password: %s \n", login, password);
+        public void displayAcсount() {
+            System.out.printf("Account Login successful! Login: %s \t Password: %s \n", User.this.login, password);
 
 
         }
